@@ -24,6 +24,24 @@ Sistema web para controle de estoque de produtos e alimentos, desenvolvido para 
 
 ## 📂 Estrutura do Projeto
 
+sistema-web-gov-sp/
+├── index.asp (página inicial com dashboard)
+├── bib_conn.asp (conexão com banco)
+├── produto_incluir.asp (cadastro de produtos)
+├── produto_estoque_entrada.asp (controle de entradas)
+├── css/ (estilos)
+├── js/ (scripts)
+└── database/schema.sql (estrutura do banco)
+
+
+## 🔧 Como executar (para avaliação)
+
+1. Instalar IIS no Windows
+2. Configurar banco SQL Server
+3. Executar o script `database/schema.sql`
+4. Configurar a string de conexão em `bib_conn.asp`
+5. Publicar no IIS
+
 
 ## 👤 Autor
 
