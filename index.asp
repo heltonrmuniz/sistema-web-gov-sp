@@ -1,12 +1,12 @@
-﻿<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <!--#include file="bib_conn_example.asp"-->
 <%
 Dim conn, strDIASEMANA, strDIA, strMES, strANO, rsDataDIASEMANA, rsDataDIA, rsDataMES, rsDataANO
 
 strDIASEMANA= "SELECT DATENAME(WEEKDAY, GETDATE()) AS DIASEMANA"
-strDIA    	= "SELECT CONVERT (CHAR (2), day	(GetDate ())) AS DIA"
-strMES    	= "SELECT CASE DATEPART(MONTH, GetDate()) WHEN -1 THEN 'Novembro' WHEN 0 THEN 'Dezembro' WHEN 1 THEN 'Janeiro' WHEN 2 THEN 'Fevereiro' WHEN 3 THEN 'Março' WHEN 4 THEN 'Abril' WHEN 5 THEN 'Maio' WHEN 6 THEN 'Junho' WHEN 7 THEN 'Julho' WHEN 8 THEN 'Agosto' WHEN 9 THEN 'Setembro' WHEN 10 THEN 'Outubro' WHEN 11 THEN 'Novembro' WHEN 12 THEN 'Dezembro' END AS MES"
-strANO    	= "SELECT CONVERT (CHAR (4), year	(GetDate ())) AS ANO"
+strDIA    	= "SELECT CONVERT (CHAR (2), day (GetDate ())) AS DIA"
+strMES    	= "SELECT CASE DATEPART(MONTH, GetDate()) WHEN 1 THEN 'Janeiro' WHEN 2 THEN 'Fevereiro' WHEN 3 THEN 'Março' WHEN 4 THEN 'Abril' WHEN 5 THEN 'Maio' WHEN 6 THEN 'Junho' WHEN 7 THEN 'Julho' WHEN 8 THEN 'Agosto' WHEN 9 THEN 'Setembro' WHEN 10 THEN 'Outubro' WHEN 11 THEN 'Novembro' WHEN 12 THEN 'Dezembro' END AS MES"
+strANO    	= "SELECT CONVERT (CHAR (4), year (GetDate ())) AS ANO"
 
 Call abre_conn
 Set rsDataDIASEMANA	= conn.Execute(strDIASEMANA)
@@ -21,7 +21,7 @@ Set rsDataANO	  	= conn.Execute(strANO)
 <meta charset="utf-8">
 <title>Portal - Sistema de Gestão</title>
 <link rel="shortcut icon" href="Imagens/icon.ico">
-<link href="footer.css" rel="stylesheet" type="text/css">
+<link href="css/footer.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 body {
 	margin-top: 0px;
@@ -36,7 +36,7 @@ body {
 
 <div class="container">
 
-	<div class="header"><a href="index.asp"><img src="Imagens/Logo_SAP/96x96.png" alt="Logotipo" name="Insert_logo" width="96" height="96" id="Insert_logo" style="" /></a>
+	<div class="header"><a href="index.asp"><img src="Imagens/Logo_Brasao.jpg" alt="Logotipo" width="96" height="96" id="Insert_logo" style="" /></a>
     
     <div class="headertext">
     <h2>Secretaria da Administração</h2>
@@ -50,7 +50,7 @@ body {
     </div>  
 
    
-    <div class="header2"><a href="index.asp"><img src="Imagens/Logo_SAP/96x96.png" alt="Logotipo" width="96" height="96" id="Insert_logo2" style="" /></a>
+    <div class="header2"><a href="index.asp"><img src="Imagens/Logo_Brasao.jpg" alt="Logotipo" width="96" height="96" id="Insert_logo2" style="" /></a>
     </div>
 <!-- end .header --></div>
     
