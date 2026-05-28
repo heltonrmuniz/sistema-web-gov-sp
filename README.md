@@ -1,4 +1,4 @@
-# Sistema de Estoque – Centro de Ressocialização de Limeira (Governo de SP)
+# Sistema de Estoque – (Governo de SP)
 
 ## 📝 Descrição
 
