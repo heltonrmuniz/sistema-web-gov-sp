@@ -30,7 +30,7 @@ sistema-web-gov-sp/
 ├── produto_incluir.asp (cadastro de produtos)
 ├── produto_estoque_entrada.asp (controle de entradas)
 ├── css/ (estilos)
-├── js/ (scripts)
+└── js/ (scripts)
 └── database/schema.sql (estrutura do banco)
 
 
