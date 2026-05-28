@@ -24,7 +24,7 @@ Sistema web para controle de estoque de produtos e alimentos, desenvolvido para 
 
 ## 📂 Estrutura do Projeto
 
-```plaintext
+plaintext
 sistema-web-gov-sp/
 │
 ├── index.asp                     # Página inicial com dashboard
