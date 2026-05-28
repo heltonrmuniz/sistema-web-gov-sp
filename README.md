@@ -1,42 +1,29 @@
-# Sistema Web – Governo do Estado de São Paulo
+# Sistema de Estoque – Centro de Ressocialização de Limeira (Governo de SP)
 
-![Status](https://img.shields.io/badge/status-concluído-brightgreen)
-![Python](https://img.shields.io/badge/ASP-Legacy-blue)
+## 📝 Descrição
 
-## 📝 Descrição do Projeto
-
-Sistema web desenvolvido para uso interno de um órgão do Governo de SP, com interface em ASP, HTML, CSS e integração com **Google Charts** para geração de gráficos dinâmicos a partir de um banco de dados **SQL Server** local.
+Sistema web para controle de estoque de produtos e alimentos, desenvolvido para a Secretarias do Estado de São Paulo.
 
 ## 🎯 Funcionalidades
 
-- Interface web responsiva e intuitiva
-- Integração com banco de dados SQL Server
-- Geração de gráficos dinâmicos com Google Charts
-- Consulta e visualização de dados internos
+- Cadastro de produtos (estocáveis, perecíveis, hortifruti, escritório, limpeza, kits, vestuário, utensílios)
+- Controle de entradas e baixas de estoque
+- Monitoramento de vencimentos (já vencidos, até 1 mês, 1-3 meses, 3-6 meses, acima de 6 meses)
+- Previsões mensal, bimestral e trimestral
+- Geração de romaneios e relatórios em PDF
+- Pesquisa de produtos, estoques e vencimentos
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
-| Tecnologia | Descrição |
-|------------|-----------|
-| ASP | Lógica de backend e conexão com banco |
+| Tecnologia | Uso |
+|------------|-----|
+| ASP Clássico | Backend e lógica de negócio |
+| SQL Server | Banco de dados |
 | HTML/CSS | Interface e estilização |
-| Google Charts | Visualização de dados em gráficos |
-| SQL Server | Banco de dados relacional local |
+| JavaScript | Menus interativos (SpryMenuBar) |
 
 ## 📂 Estrutura do Projeto
-sistema-web-gov-sp/
-├── index.asp # Página principal
-├── style.css # Estilos
-└── database/
-└── schema.sql # Estrutura do banco
 
-
-## 💻 Como Executar (para quem for testar)
-
-1. Instalar SQL Server LocalDB
-2. Executar o script `database/schema.sql`
-3. Configurar a string de conexão no `index.asp`
-4. Publicar no IIS
 
 ## 👤 Autor
 
