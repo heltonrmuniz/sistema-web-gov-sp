@@ -24,14 +24,27 @@ Sistema web para controle de estoque de produtos e alimentos, desenvolvido para 
 
 ## 📂 Estrutura do Projeto
 
+```plaintext
 sistema-web-gov-sp/
-├── index.asp (página inicial com dashboard)
-├── bib_conn.asp (conexão com banco)
-├── produto_incluir.asp (cadastro de produtos)
-├── produto_estoque_entrada.asp (controle de entradas)
-├── css/ (estilos)
-└── js/ (scripts)
-└── database/schema.sql (estrutura do banco)
+│
+├── index.asp                     # Página inicial com dashboard
+├── bib_conn.asp                  # Conexão com banco de dados
+├── produto_incluir.asp           # Cadastro de produtos
+├── produto_estoque_entrada.asp   # Controle de entradas
+│
+├── css/
+│   ├── footer.css
+│   └── SpryMenuBarVertical.css
+│
+├── js/
+│   └── SpryMenuBar.js
+│
+├── imagens/
+│   ├── Logo_Brasao.jpg
+│   └── icone_cadastro.png
+│
+└── database/
+    └── schema.sql                # Estrutura do banco de dados
 
 
 ## 🔧 Como executar (para avaliação)
